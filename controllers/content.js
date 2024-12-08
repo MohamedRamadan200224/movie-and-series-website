@@ -192,7 +192,7 @@ exports.editContent = async (req, res, next) => {
     const updatedContent = await Content.findByIdAndUpdate(req.params.id, {
       ...req.body,
     });
-    console.log("UPDATED Content! : ", updatedContent);
+    console.log("UPDATED Content : ", updatedContent);
     res.status(200).json({
       status: "success",
       data: updatedContent._doc,
