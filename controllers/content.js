@@ -197,7 +197,7 @@ exports.editContent = async (req, res, next) => {
       status: "success",
       data: updatedContent._doc,
     });
-    console.log("UPDATED Content : ", updatedContent.title);
+    console.log("UPDATED Content!! : ", updatedContent.title);
   } catch (err) {
     errFunction(err, next);
   }
