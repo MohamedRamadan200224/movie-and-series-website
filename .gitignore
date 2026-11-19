@@ -1,1 +1,15 @@
-node_modules
+# Dependencies
+node_modules/
+
+# Local environment / secrets — NEVER commit these.
+# The repo previously committed config.env with live credentials;
+# it is now ignored. Keep real values only in a local file, never in git.
+config.env
+.env
+.env.*
+
+# The example file documents variable NAMES only and IS tracked.
+!.env.example
+
+# OS / editor noise
+.DS_Store
